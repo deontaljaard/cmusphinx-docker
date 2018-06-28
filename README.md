@@ -24,6 +24,7 @@ docker run -it deontaljaard/g2p
 
 You can then play with the g2p-seq2seq lib. Here is a quick example.
 ```bash
+docker exec -it deontaljaard/g2p bash
 echo "test" >> words.txt
 g2p-seq2seq --decode words.txt --model_dir /g2p-seq2seq-model/g2p-seq2seq-model-6.2-cmudict-nostress
 ``` 
